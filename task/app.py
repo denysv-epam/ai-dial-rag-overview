@@ -149,7 +149,7 @@ def main(rag: MicrowaveRAG):
         # Augmentation
         augmented_prompt = rag.augment_prompt(user_question, context)
         # Generation
-        answer = rag.generate_answer(augmented_prompt)
+        rag.generate_answer(augmented_prompt)
 
 
 main(
